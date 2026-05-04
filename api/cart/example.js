@@ -8,6 +8,11 @@
     , endpoints = require("../endpoints")
     , app       = express()
 
+
+
+  app.get("/cart", function (req, res, next) {
+    console.log("Request received: " + req.url + ", " 
+  }
   // List items in cart for current logged in user.
   app.get("/cart", function (req, res, next) {
     console.log("Request received: " + req.url + ", " + req.query.custId);
